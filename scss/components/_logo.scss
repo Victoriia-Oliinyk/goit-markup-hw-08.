@@ -1,0 +1,31 @@
+.logo {
+    color: var(--accent-color);
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    &__header-accent {
+        color: #000000;
+    }
+
+    &__header-size {
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 24px;
+        margin-right: 93px;
+    }
+
+    &-footer {
+        color: var(--hero-title-color);
+    }
+}
+
+.footer-logo-margin {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}

@@ -1,0 +1,96 @@
+.feature-list {
+  @include mq(tablet-only) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+     @include mq(desktop) {
+      display: flex;
+     }
+}
+.features-icon-block {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--background-team-color);
+  border-radius: 4px;
+}
+
+.feature-item {
+  @include mq(mobile-only) {
+    margin-bottom: 30px;
+  }
+  @include mq(tablet) {
+    width: 50%;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+.feature-item:last-child {
+  @include mq(mobile-only) {
+    margin-bottom: 0;
+  }
+}
+
+.feature-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: var(--font-size-main);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  
+
+  @include mq(mobile-only) {
+  text-align: center;
+  }
+  @include mq(tablet) {
+  text-align: left;
+  }
+}
+.feature-text {
+color: var(--primary-text-color);
+  font-size: var(--font-size-main);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  @include mq(mobile-only) {
+  }
+  @include mq(tablet) {
+  }
+}
+
+
+
+//  @include mq(mobile) {}
+
+//  @include mq(tablet) {}
+
+//  @include mq(desktop) {}
+
+// .feature-list {
+//   display: flex;
+
+
+
+// }
+
+// .feature-item {
+//   width: 270px;
+
+//   &::before {
+//     content: "";
+//   }
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
